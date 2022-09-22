@@ -6,7 +6,7 @@
 
 Projeto construido no evento next level week da rocketSeat
 
-[🔗 Clique aqui para acessar o site](syskiorgames.github.io/NLW)
+[🔗 Clique aqui para acessar o site](https://syskiorgames.github.io/NLW)
 
 ## 🛠 Tecnologias Usadas
 - HTML
