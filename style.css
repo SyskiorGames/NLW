@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul *{
+    list-style: none;
+}
+
+body{
+    background-image: url(./assets/bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: #121214;
+}
+
+body *{
+    font-family: "inter", sans-serif;
+}
+
+main{
+    max-width: 580;
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+section{
+    color: white;
+    line-height: 160%;
+    background-image: linear-gradient(90deg, #9572FC 0%,#46D7AE 50%, #E2D45C 100%);
+    padding-top: 4px;
+    border-radius: 13px;
+}
+
+section h2{
+    letter-spacing: -0.47;
+}
+
+section p{
+    color: #A1A1AA;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 24px;
+    transition: transform 0.3s;
+}
+
+li{
+    transition: transform 0.3s;
+}
+
+li:hover{
+    transform: scale(1.1);
+}
+
+.games_list img{
+    width: 90px;
+    border-radius: 8px;
+}
+
+.channels_list img{
+    width: 70px;
+    border-radius: 50%;
+}
+
+.social_list img{
+    width: 50px;
+}
+
+main div{
+    background-color: #2A2634;
+    border-radius: 8px;
+    padding: 32px;
+    padding-top: 24px;
+}
+
+li a .git_logo{
+    width: 32px;
+}
+
+header div{
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(90deg, #9572FC 0%,#46D7AE 50%, #E2D45C 100%);
+    border-radius: 50%;
+    display: flex;
+    padding: 4px;
+    margin: 25px auto;
+    transition: transform 0.3s;
+}
+
+header div:hover{
+    transform: scale(1.1);
+}
+
+header div img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+header{
+    height: calc(120px + 24px);
+}
+
+/* ANIMAÇÕES */
+
+header div{
+    animation: from_top .7s backwards;
+    animation-delay: .4s;
+}
+
+main section{
+    animation: from_bottom .7s backwards;
+}
+
+main section:nth-child(1){
+    animation-delay: 0s
+}
+
+main section:nth-child(2){
+    animation-delay: .2s
+}
+
+main section:nth-child(3){
+    animation-delay: .4s
+}
+
+@keyframes from_top{
+    from{
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes from_bottom{
+    from{
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+
+
